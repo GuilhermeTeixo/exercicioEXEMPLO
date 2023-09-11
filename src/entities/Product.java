@@ -17,5 +17,9 @@ public class Product {
 	public void removeProduct() {
 		this.quantity -= quantity;
 	}
+	
+	public String toString() {
+		return name + ", $ " + String.format("%.2f",price) + ", " + quantity + " units, Total: $" + String.format("%.2f",totalValueInStock());
+	}
 
 }
