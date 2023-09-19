@@ -19,7 +19,12 @@ public class Program {
 		System.out.println("Quantity in Stock: ");
 		int quantity = sc.nextInt();
 		
-		Product product = new Product(name, price, quantity);
+		Product product = new Product(name, price);
+		
+		product.setName ("Computer");
+		System.out.println("updated name: " + product.getName());
+		product.setPrice(1200.00);
+		System.out.printf("Updated price " + product.getPrice());
 		
 		System.out.println();
 		System.out.println("Product data: " + product);
